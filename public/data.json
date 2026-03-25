@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://source.unsplash.com/400x400/?chat,messaging",
+    "title": "Chatify",
+    "companyName": "TechNova Ltd.",
+    "id": 1,
+    "description": "A real-time messaging app with group chat, voice messages, and file sharing.",
+    "size": 45,
+    "reviews": 12450,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 5650 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?fitness,workout",
+    "title": "FitTrack",
+    "companyName": "HealthCore",
+    "id": 2,
+    "description": "Track workouts, calories, and daily health metrics.",
+    "size": 60,
+    "reviews": 8340,
+    "ratingAvg": 4.2,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 540 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3900 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?task,productivity",
+    "title": "TaskFlow",
+    "companyName": "Productive Apps Inc.",
+    "id": 3,
+    "description": "Manage tasks and boost productivity with reminders.",
+    "size": 28,
+    "reviews": 15900,
+    "ratingAvg": 4.6,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 7800 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?learning,education",
+    "title": "Learnify",
+    "companyName": "EduSpark",
+    "id": 4,
+    "description": "Interactive courses, quizzes, and certifications.",
+    "size": 85,
+    "reviews": 10230,
+    "ratingAvg": 4.4,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 450 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 4480 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?food,delivery",
+    "title": "Foodiez",
+    "companyName": "QuickBite Technologies",
+    "id": 5,
+    "description": "Order food with real-time delivery tracking.",
+    "size": 70,
+    "reviews": 21500,
+    "ratingAvg": 4.3,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 8300 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?travel,airplane",
+    "title": "TravelGo",
+    "companyName": "WanderLabs",
+    "id": 6,
+    "description": "Book trips, flights, and hotels easily.",
+    "size": 95,
+    "reviews": 6400,
+    "ratingAvg": 4.1,
+    "downloads": 210000,
+    "ratings": [
+      { "name": "1 star", "count": 280 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2720 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?finance,money",
+    "title": "MoneyMate",
+    "companyName": "FinEdge Solutions",
+    "id": 7,
+    "description": "Track expenses and manage your budget.",
+    "size": 35,
+    "reviews": 11900,
+    "ratingAvg": 4.5,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 620 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 5330 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?music,headphones",
+    "title": "MusicBox",
+    "companyName": "SoundWave Inc.",
+    "id": 8,
+    "description": "Stream and discover new music.",
+    "size": 120,
+    "reviews": 33200,
+    "ratingAvg": 4.7,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 19700 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?weather,clouds",
+    "title": "Weatherly",
+    "companyName": "SkyCast Technologies",
+    "id": 9,
+    "description": "Accurate weather forecasts and alerts.",
+    "size": 25,
+    "reviews": 5400,
+    "ratingAvg": 4.0,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 2080 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?shopping,ecommerce",
+    "title": "ShopCart",
+    "companyName": "RetailHub",
+    "id": 10,
+    "description": "Shop for daily essentials online.",
+    "size": 88,
+    "reviews": 27800,
+    "ratingAvg": 4.3,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 4100 },
+      { "name": "4 star", "count": 9200 },
+      { "name": "5 star", "count": 10500 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?photo,editing",
+    "title": "PhotoPro",
+    "companyName": "PixelForge",
+    "id": 11,
+    "description": "Edit photos with powerful tools.",
+    "size": 150,
+    "reviews": 18700,
+    "ratingAvg": 4.6,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 6200 },
+      { "name": "5 star", "count": 8800 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?gaming,arcade",
+    "title": "GameDash",
+    "companyName": "PlaySphere Studios",
+    "id": 12,
+    "description": "Play fun games and challenges.",
+    "size": 200,
+    "reviews": 22100,
+    "ratingAvg": 4.2,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 3900 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 7400 }
+    ]
+  }
+]
