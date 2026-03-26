@@ -4,6 +4,7 @@ import App from "../App";
 import ErrorPage from "./ErrorPage";
 import AppSection from "./AppSection";
 import MyInstallation from "./MyInstallation";
+import AppDetails from "./AppDetails";
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ export const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/apps", element: <AppSection /> },
-    //   { path: "/app/:id", element: <AppDetails /> },
+      { path: "/app/:id", element: <AppDetails /> },
       { path: "/installation", element: <MyInstallation /> },
     ],
   },
