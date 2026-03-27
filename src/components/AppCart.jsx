@@ -32,14 +32,35 @@ const AppCart = () => {
             <Link to={`/app/${app.id}`} key={app.id}>
               <div className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
 
-                <img src={app.image} alt={app.title} className="h-40 mx-auto object-contain mb-4" />
+                <img
+                      src={app.image}
+                      alt={app.title}
+                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                    />
 
-                <h4 className="text-center font-semibold">{app.title}</h4>
+                <h4 className="text-center font-bold text-slate-800 text-lg mb-6 flex-grow">
+                    {app.title}
+                  </h4>
 
-                <div className="flex justify-between mt-3 text-sm">
-                  <span>{app.downloads}</span>
-                  <span>⭐ {app.ratingAvg}</span>
-                </div>
+                <div className="flex items-center justify-between mt-auto border-t border-gray-50 pt-4">
+
+                    {/* Downloads */}
+                    <div className="bg-green-50 px-3 py-1 rounded-full flex items-center gap-1.5">
+                      <span className="text-green-600 font-bold text-sm">
+                        {app.downloads >= 1000
+                          ? (app.downloads / 1000).toFixed(0) + "K"
+                          : app.downloads}
+                      </span>
+                    </div>
+
+                    {/* Rating */}
+                    <div className="bg-purple-50 px-3 py-1 rounded-full flex items-center gap-1.5">
+                      <span className="text-purple-600 font-bold text-sm">
+                        ⭐ {app.ratingAvg}
+                      </span>
+                    </div>
+
+                  </div>
 
               </div>
             </Link>

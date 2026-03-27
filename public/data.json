@@ -1,10 +1,10 @@
 [
   {
-    "image": "https://source.unsplash.com/400x400/?chat,messaging",
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
     "title": "Chatify",
     "companyName": "TechNova Ltd.",
     "id": 1,
-    "description": "A real-time messaging app with group chat, voice messages, and file sharing.",
+    "description": "Chatify is a modern real-time messaging platform that allows users to communicate instantly through text, voice messages, and multimedia sharing. It supports group chats, file transfers, and secure conversations for both personal and professional use.",
     "size": 45,
     "reviews": 12450,
     "ratingAvg": 4.5,
@@ -18,11 +18,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?fitness,workout",
+    "image": "https://cdn-icons-png.flaticon.com/512/2965/2965567.png",
     "title": "FitTrack",
     "companyName": "HealthCore",
     "id": 2,
-    "description": "Track workouts, calories, and daily health metrics.",
+    "description": "FitTrack helps users monitor daily workouts, calorie intake, and health metrics. It provides personalized fitness plans and insights to improve lifestyle and overall health.",
     "size": 60,
     "reviews": 8340,
     "ratingAvg": 4.2,
@@ -36,11 +36,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?task,productivity",
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
     "title": "TaskFlow",
     "companyName": "Productive Apps Inc.",
     "id": 3,
-    "description": "Manage tasks and boost productivity with reminders.",
+    "description": "TaskFlow is a productivity app designed to help users organize tasks, set reminders, and manage projects efficiently with a clean and intuitive interface.",
     "size": 28,
     "reviews": 15900,
     "ratingAvg": 4.6,
@@ -54,11 +54,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?learning,education",
+    "image": "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",
     "title": "Learnify",
     "companyName": "EduSpark",
     "id": 4,
-    "description": "Interactive courses, quizzes, and certifications.",
+    "description": "Learnify provides an interactive learning experience with courses, quizzes, and certifications across multiple subjects for students and professionals.",
     "size": 85,
     "reviews": 10230,
     "ratingAvg": 4.4,
@@ -72,11 +72,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?food,delivery",
+    "image": "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
     "title": "Foodiez",
     "companyName": "QuickBite Technologies",
     "id": 5,
-    "description": "Order food with real-time delivery tracking.",
+    "description": "Foodiez is a fast and reliable food delivery platform with real-time tracking, secure payment options, and personalized restaurant recommendations.",
     "size": 70,
     "reviews": 21500,
     "ratingAvg": 4.3,
@@ -89,12 +89,13 @@
       { "name": "5 star", "count": 8300 }
     ]
   },
+
   {
-    "image": "https://source.unsplash.com/400x400/?travel,airplane",
+    "image": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
     "title": "TravelGo",
     "companyName": "WanderLabs",
     "id": 6,
-    "description": "Book trips, flights, and hotels easily.",
+    "description": "TravelGo simplifies trip planning with easy booking for flights, hotels, and tours, along with travel guides and budget tools.",
     "size": 95,
     "reviews": 6400,
     "ratingAvg": 4.1,
@@ -108,11 +109,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?finance,money",
+    "image": "https://cdn-icons-png.flaticon.com/512/2331/2331970.png",
     "title": "MoneyMate",
     "companyName": "FinEdge Solutions",
     "id": 7,
-    "description": "Track expenses and manage your budget.",
+    "description": "MoneyMate helps users track expenses, manage budgets, and analyze spending patterns with smart financial insights.",
     "size": 35,
     "reviews": 11900,
     "ratingAvg": 4.5,
@@ -126,11 +127,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?music,headphones",
+    "image": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
     "title": "MusicBox",
     "companyName": "SoundWave Inc.",
     "id": 8,
-    "description": "Stream and discover new music.",
+    "description": "MusicBox lets users stream and discover music with personalized playlists, offline playback, and high-quality audio.",
     "size": 120,
     "reviews": 33200,
     "ratingAvg": 4.7,
@@ -143,12 +144,13 @@
       { "name": "5 star", "count": 19700 }
     ]
   },
+
   {
-    "image": "https://source.unsplash.com/400x400/?weather,clouds",
+    "image": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
     "title": "Weatherly",
     "companyName": "SkyCast Technologies",
     "id": 9,
-    "description": "Accurate weather forecasts and alerts.",
+    "description": "Weatherly delivers accurate weather forecasts, alerts, and live updates for better daily planning.",
     "size": 25,
     "reviews": 5400,
     "ratingAvg": 4.0,
@@ -162,11 +164,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?shopping,ecommerce",
+    "image": "https://cdn-icons-png.flaticon.com/512/263/263142.png",
     "title": "ShopCart",
     "companyName": "RetailHub",
     "id": 10,
-    "description": "Shop for daily essentials online.",
+    "description": "ShopCart is a secure e-commerce app offering daily essentials, fast delivery, and easy payment options.",
     "size": 88,
     "reviews": 27800,
     "ratingAvg": 4.3,
@@ -180,11 +182,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?photo,editing",
+    "image": "https://cdn-icons-png.flaticon.com/512/2922/2922510.png",
     "title": "PhotoPro",
     "companyName": "PixelForge",
     "id": 11,
-    "description": "Edit photos with powerful tools.",
+    "description": "PhotoPro provides advanced editing tools, filters, and creative effects for stunning photo enhancements.",
     "size": 150,
     "reviews": 18700,
     "ratingAvg": 4.6,
@@ -198,11 +200,11 @@
     ]
   },
   {
-    "image": "https://source.unsplash.com/400x400/?gaming,arcade",
+    "image": "https://cdn-icons-png.flaticon.com/512/686/686589.png",
     "title": "GameDash",
     "companyName": "PlaySphere Studios",
     "id": 12,
-    "description": "Play fun games and challenges.",
+    "description": "GameDash offers a wide range of fun and challenging games with smooth gameplay and engaging experiences.",
     "size": 200,
     "reviews": 22100,
     "ratingAvg": 4.2,
@@ -213,6 +215,79 @@
       { "name": "3 star", "count": 3900 },
       { "name": "4 star", "count": 7200 },
       { "name": "5 star", "count": 7400 }
+    ]
+  },
+
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1041/1041883.png",
+    "title": "NewsFlash",
+    "companyName": "MediaCore",
+    "id": 13,
+    "description": "NewsFlash provides breaking news and trending updates from around the world with real-time notifications.",
+    "size": 40,
+    "reviews": 7200,
+    "ratingAvg": 4.1,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 3900 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1087/1087927.png",
+    "title": "NoteMaster",
+    "companyName": "WriteSoft",
+    "id": 14,
+    "description": "NoteMaster helps users create, organize, and manage notes efficiently with a clean and distraction-free interface.",
+    "size": 22,
+    "reviews": 6800,
+    "ratingAvg": 4.3,
+    "downloads": 190000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 3550 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/942/942748.png",
+    "title": "SecureVault",
+    "companyName": "CyberSafe Inc.",
+    "id": 15,
+    "description": "SecureVault protects sensitive data with strong encryption, password management, and privacy-focused tools.",
+    "size": 55,
+    "reviews": 9100,
+    "ratingAvg": 4.5,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+    "title": "BookNest",
+    "companyName": "ReadWorld",
+    "id": 16,
+    "description": "BookNest is a digital reading platform where users can explore thousands of books and enjoy a seamless reading experience.",
+    "size": 75,
+    "reviews": 11200,
+    "ratingAvg": 4.6,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 5400 }
     ]
   }
 ]

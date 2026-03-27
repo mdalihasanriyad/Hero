@@ -26,11 +26,16 @@ const AppDetails = () => {
     if (exist) setInstalled(true);
   }, [id]);
 
-  const handleInstall = () => {
-    saveApp(app);
-    setInstalled(true);
-    toast.success("App Installed Successfully 🎉");
-  };
+const handleInstall = () => {
+  if (installed) {
+    toast.error("Already Installed ⚠️");
+    return;
+  }
+
+  saveApp(app);
+  setInstalled(true);
+  toast.success("App Installed Successfully 🎉");
+};
 
   if (!app) return <div className="text-center py-20 font-bold">Loading...</div>;
 
