@@ -21,11 +21,9 @@ const Hero = () => {
           </button>
         </div>
 
-        {/* Hero Image / Mockup Placeholder */}
         <img src={hero} alt="hero" />
       </div>
 
-      {/* Stats Section */}
       <div className="bg-purple-600 pt-32 pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-12">

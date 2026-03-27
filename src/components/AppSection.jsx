@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import logo from '../assets/logo.png';
 
@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 const AppSection = () => {
   const [apps, setApps] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [loading, setLoading] = useState(true); // ✅ loader state
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     fetch('/data.json')
@@ -28,13 +28,10 @@ const AppSection = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white">
-        <div className="flex flex-col items-center gap-4">
-          
-          <div className="bg-blue-600 p-4 rounded-xl animate-pulse">
-          
+        <div className="flex flex-col items-center gap-4">         
+          <div className="bg-blue-600 p-4 rounded-xl animate-pulse">         
                     <img src={logo} alt="logo" className='w-44' />
                   </div>
-
         </div>
       </div>
     );
@@ -43,8 +40,6 @@ const AppSection = () => {
   return (
     <section className="bg-slate-50 py-12 px-6 md:px-12 min-h-screen">
       <div className="max-w-7xl mx-auto">
-
-        {/* 🔥 Title */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-black text-slate-800 mb-4 flex items-center justify-center gap-3">
             Our All <span className="text-purple-600">Applications</span>
@@ -55,7 +50,6 @@ const AppSection = () => {
           </p>
         </div>
 
-        {/* 🔍 Search + Count */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
           <h3 className="text-xl font-bold text-slate-900 border-b-2 border-slate-900 pb-1">
             ({filteredApps.length}) Apps Found
@@ -82,14 +76,12 @@ const AppSection = () => {
           </div>
         </div>
 
-        {/* ❌ No App Found */}
         {filteredApps.length === 0 ? (
           <div className="text-center mt-20">
             <h2 className="text-xl text-gray-500">No App Found 😢</h2>
           </div>
         ) : (
 
-          /* 📱 Apps Grid */
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
             {filteredApps.map((app) => (
@@ -97,24 +89,19 @@ const AppSection = () => {
 
                 <div className="bg-white rounded-8 shadow-lg hover:shadow-2xl transition-all duration-300 p-4 border border-gray-100 flex flex-col group cursor-pointer">
 
-                  {/* Image */}
                   <div className="bg-gray-50 rounded-2xl aspect-square mb-5 flex items-center justify-center overflow-hidden p-6">
                     <img
                       src={app.image}
                       alt={app.title}
                       className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                     />
-                  </div>
-
-                  {/* Title */}
+                  </div>     
                   <h4 className="text-center font-bold text-slate-800 text-lg mb-6 flex-grow">
                     {app.title}
                   </h4>
 
-                  {/* Stats */}
                   <div className="flex items-center justify-between mt-auto border-t border-gray-50 pt-4">
 
-                    {/* Downloads */}
                     <div className="bg-green-50 px-3 py-1 rounded-full flex items-center gap-1.5">
                       <span className="text-green-600 font-bold text-sm">
                         {app.downloads >= 1000
@@ -123,22 +110,18 @@ const AppSection = () => {
                       </span>
                     </div>
 
-                    {/* Rating */}
                     <div className="bg-purple-50 px-3 py-1 rounded-full flex items-center gap-1.5">
                       <span className="text-purple-600 font-bold text-sm">
                         ⭐ {app.ratingAvg}
                       </span>
                     </div>
-
                   </div>
                 </div>
 
               </Link>
             ))}
-
           </div>
         )}
-
       </div>
     </section>
   );

@@ -60,7 +60,6 @@ const Footer = () => {
 
       </div>
 
-      {/* Bottom */}
       <div className="text-center text-gray-500 text-sm mt-12 border-t border-gray-700 pt-6">
         © {new Date().getFullYear()} Hero Apps. All rights reserved.
       </div>

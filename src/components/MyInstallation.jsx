@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getApps, removeApp } from "./../utlis/localStorage";
 import toast from "react-hot-toast";
 
@@ -35,23 +35,19 @@ const MyInstallation = () => {
 
       <div className="px-6 md:px-12 py-10 min-h-screen bg-gray-50">
 
-        {/* Title */}
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-gray-800">
-            Your Installed Apps 📦
+            Your Installed Apps 
           </h1>
           <p className="text-gray-500">
             Explore all installed apps on your device
           </p>
         </div>
 
-        {/* Top Bar */}
         <div className="flex justify-between items-center mb-6">
           <p className="text-blue-600 font-medium">
             {apps.length} Apps Found
           </p>
-
-          {/* SORT DROPDOWN */}
           <select
             className="border px-4 py-2 rounded"
             onChange={(e) => handleSort(e.target.value)}
@@ -61,8 +57,6 @@ const MyInstallation = () => {
             <option value="low">Low → High</option>
           </select>
         </div>
-
-        {/* EMPTY STATE */}
         {apps.length === 0 ? (
           <div className="text-center mt-20">
             <h2 className="text-xl text-gray-500">No Installed Apps 😢</h2>
@@ -76,7 +70,6 @@ const MyInstallation = () => {
                 className="flex justify-between items-center bg-white p-4 rounded-xl shadow hover:shadow-md transition"
               >
 
-                {/* LEFT SIDE */}
                 <div className="flex items-center gap-4">
                   <img
                     src={app.image}
@@ -97,7 +90,6 @@ const MyInstallation = () => {
                   </div>
                 </div>
 
-                {/* RIGHT SIDE */}
                 <button
                   onClick={() => handleRemove(app.id)}
                   className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"

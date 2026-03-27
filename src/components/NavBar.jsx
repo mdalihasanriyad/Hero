@@ -5,14 +5,11 @@ import logo from '../assets/logo.png';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const activeClass = "text-blue-600 font-semibold border-b-2 border-blue-600";
   const normalClass = "hover:text-blue-600";
 
   return (
     <nav className="bg-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50 shadow-sm">
-
-      {/* ✅ LEFT: Logo */}
       <Link to="/" className="flex items-center gap-2">
         <div className="bg-blue-600 p-2 rounded-lg">
           <img src={logo} alt="logo" className='w-10' />
@@ -22,7 +19,6 @@ const NavBar = () => {
         </span>
       </Link>
 
-      {/* ✅ CENTER: Menu */}
       <div className="hidden md:flex gap-8 text-gray-600 font-medium items-center absolute left-1/2 transform -translate-x-1/2">
 
         <NavLink
@@ -50,7 +46,6 @@ const NavBar = () => {
 
       </div>
 
-      {/* ✅ RIGHT: Contribute */}
       <div className="hidden md:block">
         <a
           href="https://github.com/mdalihasanriyad"
@@ -63,7 +58,6 @@ const NavBar = () => {
         </a>
       </div>
 
-      {/* 📱 Mobile Menu Button */}
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -77,7 +71,6 @@ const NavBar = () => {
         </svg>
       </button>
 
-      {/* 📱 Mobile Dropdown */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-white border-b p-5 flex flex-col gap-4 md:hidden shadow-lg">
 
@@ -94,7 +87,6 @@ const NavBar = () => {
               Contribute
             </button>
           </a>
-
         </div>
       )}
     </nav>

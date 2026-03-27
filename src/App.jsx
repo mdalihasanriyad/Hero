@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // 1.5 sec loader
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,7 +22,6 @@ function App() {
 
   return (
     <div>
-      {/* 🔥 Toast Global Setup */}
       <Toaster 
         position="top-center"
         reverseOrder={false}
