@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { saveApp, getApps } from "./../utlis/localStorage";
 import toast from "react-hot-toast";
+import logo from '../assets/logo.png';
+
 
 const AppDetails = () => {
   const { id } = useParams();
   const [app, setApp] = useState(null);
   const [installed, setInstalled] = useState(false);
+  const [loading, setLoading] = useState(true); // ✅ loader state
 
   // Data Fetching
   useEffect(() => {
@@ -16,7 +19,9 @@ const AppDetails = () => {
         const apps = Array.isArray(data) ? data : data.apps || [];
         const found = apps.find((a) => a.id === parseInt(id));
         setApp(found);
-      });
+        setLoading(false); // ✅ done loading
+      })
+      .catch(() => setLoading(false));
   }, [id]);
 
   // Check Installation Status
@@ -26,18 +31,34 @@ const AppDetails = () => {
     if (exist) setInstalled(true);
   }, [id]);
 
-const handleInstall = () => {
-  if (installed) {
-    toast.error("Already Installed ⚠️");
-    return;
+  const handleInstall = () => {
+    if (installed) {
+      toast.error("Already Installed ⚠️");
+      return;
+    }
+
+    saveApp(app);
+    setInstalled(true);
+    toast.success("App Installed Successfully 🎉");
+  };
+
+  // ✅ Loader UI
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        <div className="flex flex-col items-center gap-4">
+          
+          <div className="bg-blue-600 p-4 rounded-xl animate-pulse">
+          
+                    <img src={logo} alt="logo" className='w-44' />
+                  </div>
+
+        </div>
+      </div>
+    );
   }
 
-  saveApp(app);
-  setInstalled(true);
-  toast.success("App Installed Successfully 🎉");
-};
-
-  if (!app) return <div className="text-center py-20 font-bold">Loading...</div>;
+  if (!app) return <div className="text-center py-20 font-bold">App Not Found</div>;
 
   return (
     <div className="bg-[#f8f9fc] min-h-screen px-6 md:px-20 py-12 font-sans">

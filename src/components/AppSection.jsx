@@ -1,23 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png';
+
 
 const AppSection = () => {
   const [apps, setApps] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [loading, setLoading] = useState(true); // ✅ loader state
 
   useEffect(() => {
     fetch('/data.json')
       .then((res) => res.json())
       .then((data) => {
         setApps(Array.isArray(data) ? data : data.apps || []);
+        setLoading(false); 
       })
-      .catch((err) => console.error("Data fetch error:", err));
+      .catch((err) => {
+        console.error("Data fetch error:", err);
+        setLoading(false);
+      });
   }, []);
 
-  // 🔍 Filter Apps
   const filteredApps = apps.filter(app =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        <div className="flex flex-col items-center gap-4">
+          
+          <div className="bg-blue-600 p-4 rounded-xl animate-pulse">
+          
+                    <img src={logo} alt="logo" className='w-44' />
+                  </div>
+
+        </div>
+      </div>
+    );
+  }
 
   return (
     <section className="bg-slate-50 py-12 px-6 md:px-12 min-h-screen">

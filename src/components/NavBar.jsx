@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import logo from '../assets/logo.png';
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,25 +10,27 @@ const NavBar = () => {
   const normalClass = "hover:text-blue-600";
 
   return (
-    <nav className="bg-white py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+    <nav className="bg-white py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50 shadow-sm">
 
-      {/* Logo */}
+      {/* ✅ LEFT: Logo */}
       <Link to="/" className="flex items-center gap-2">
         <div className="bg-blue-600 p-2 rounded-lg">
-          <div className="text-white font-bold text-xl italic">H</div>
+          <img src={logo} alt="logo" className='w-10' />
         </div>
         <span className="font-bold text-xl tracking-tight text-blue-900 uppercase">
           Hero.io
         </span>
       </Link>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex gap-8 text-gray-600 font-medium items-center">
+      {/* ✅ CENTER: Menu */}
+      <div className="hidden md:flex gap-8 text-gray-600 font-medium items-center absolute left-1/2 transform -translate-x-1/2">
 
         <NavLink
           to="/"
           className={({ isActive }) => isActive ? activeClass : normalClass}
         >
+
+
           Home
         </NavLink>
 
@@ -44,18 +48,22 @@ const NavBar = () => {
           Installation
         </NavLink>
 
+      </div>
+
+      {/* ✅ RIGHT: Contribute */}
+      <div className="hidden md:block">
         <a
-          href="https://github.com/YOUR_GITHUB"
+          href="https://github.com/mdalihasanriyad"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="bg-blue-600 text-white px-5 py-2 rounded-lg flex items-center gap-2 hover:bg-blue-700 transition">
-            <span className="text-sm">Contribute</span>
+          <button className="bg-blue-600 cursor-pointer text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+            Contribute
           </button>
         </a>
       </div>
 
-      {/* Mobile Menu Button */}
+      {/* 📱 Mobile Menu Button */}
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -69,21 +77,13 @@ const NavBar = () => {
         </svg>
       </button>
 
-      {/* Mobile Dropdown */}
+      {/* 📱 Mobile Dropdown */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-white border-b p-5 flex flex-col gap-4 md:hidden shadow-lg">
 
-          <NavLink to="/" onClick={()=>setIsOpen(false)}>
-            Home
-          </NavLink>
-
-          <NavLink to="/apps" onClick={()=>setIsOpen(false)}>
-            Apps
-          </NavLink>
-
-          <NavLink to="/installation" onClick={()=>setIsOpen(false)}>
-            Installation
-          </NavLink>
+          <NavLink to="/" onClick={()=>setIsOpen(false)}>Home</NavLink>
+          <NavLink to="/apps" onClick={()=>setIsOpen(false)}>Apps</NavLink>
+          <NavLink to="/installation" onClick={()=>setIsOpen(false)}>Installation</NavLink>
 
           <a
             href="https://github.com/YOUR_GITHUB"
