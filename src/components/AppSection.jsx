@@ -74,7 +74,7 @@ const AppSection = () => {
             {filteredApps.map((app) => (
               <Link to={`/app/${app.id}`} key={app.id}>
 
-                <div className="bg-white rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-300 p-4 border border-gray-100 flex flex-col group cursor-pointer">
+                <div className="bg-white rounded-8 shadow-lg hover:shadow-2xl transition-all duration-300 p-4 border border-gray-100 flex flex-col group cursor-pointer">
 
                   {/* Image */}
                   <div className="bg-gray-50 rounded-2xl aspect-square mb-5 flex items-center justify-center overflow-hidden p-6">
